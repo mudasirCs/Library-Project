@@ -419,6 +419,7 @@ dialog legend {
 
 .book img {
   flex: initial;
+  cursor: pointer;
   width: 70px;
   height: auto;
 }
