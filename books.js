@@ -80,6 +80,7 @@ function displayBooks() {
         bookImage.classList.remove("book-open");
         bookImage.src = "./assets/images/book.svg";
       }
+      displayBooks();
     });
 
     const details = document.createElement("div");
@@ -88,7 +89,6 @@ function displayBooks() {
       <p>Title: ${book.title}</p>
       <p>Author: ${book.author}</p>
       <p>Pages: ${book.pages}</p>
-      <p>Read: ${book.read ? "yes" : "no"}</p>
     `;
 
     const removeButton = document.createElement("button");
