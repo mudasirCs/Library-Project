@@ -36,7 +36,18 @@ submitBookButton.addEventListener("click", (e) => {
 
   displayBooks();
 });
-
+class Books {
+  #title;
+  #author;
+  #pages;
+  #read;
+  constructor(title, author, pages, read) {
+    this.#title = title;
+    this.#author = author;
+    this.#pages = pages;
+    this.#read = read;
+  }
+}
 function Book(title, author, pages, read) {
   this.title = title;
   this.author = author;
