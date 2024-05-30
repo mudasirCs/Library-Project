@@ -295,6 +295,18 @@ dialog legend {
   border-radius: 5px;
 }
 
+.form-fields p input:invalid {
+  border: 1px dotted rgb(1, 128, 255);
+}
+
+.form-fields p input:invalid:required {
+  background-image: linear-gradient(
+    to right,
+    rgb(148, 148, 252),
+    rgb(255, 134, 255)
+  );
+}
+
 .form-fields p:last-child {
   display: grid;
   grid-auto-flow: column;
